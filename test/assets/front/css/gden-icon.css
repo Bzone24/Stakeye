@@ -1,0 +1,84 @@
+@font-face {
+  font-family: 'gden';
+  src:  url('../fonts/gden.eot?9qigpx');
+  src:  url('../fonts/gden.eot?9qigpx#iefix') format('embedded-opentype'),
+    url('../fonts/gden.ttf?9qigpx') format('truetype'),
+    url('../fonts/gden.woff?9qigpx') format('woff'),
+    url('../fonts/gden.svg?9qigpx#gden') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+.icon-gden- {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'gden' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-gdenmagic-wand:before {
+  content: "\e910";
+}
+.icon-gdenmoney-check:before {
+  content: "\e911";
+}
+.icon-gdendice:before {
+  content: "\e912";
+}
+.icon-gdenrocket-lunch:before {
+  content: "\e900";
+}
+.icon-gdenpaper-plane:before {
+  content: "\e901";
+}
+.icon-gdenangle-right:before {
+  content: "\e902";
+}
+.icon-gdenangle-left:before {
+  content: "\e903";
+}
+.icon-gdenangle-down:before {
+  content: "\e904";
+}
+.icon-gdenangle-up:before {
+  content: "\e905";
+}
+.icon-gdencheck:before {
+  content: "\e906";
+}
+.icon-gdenenvelope:before {
+  content: "\e907";
+}
+.icon-gdenheart:before {
+  content: "\e908";
+}
+.icon-gdenhome:before {
+  content: "\e909";
+}
+.icon-gdeninstagram:before {
+  content: "\e90a";
+}
+.icon-gdenmarker:before {
+  content: "\e90b";
+}
+.icon-gdenmenu-burger:before {
+  content: "\e90c";
+}
+.icon-gdenphone-call:before {
+  content: "\e90d";
+}
+.icon-gdenuser:before {
+  content: "\e90e";
+}
+.icon-gdenyoutube:before {
+  content: "\e90f";
+}

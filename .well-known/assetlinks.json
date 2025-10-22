@@ -1,0 +1,9 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "com.stakeye.app",
+    "sha256_cert_fingerprints":
+    ["FD:7E:10:FD:BA:A1:28:28:9F:0E:B9:5A:FF:E2:28:F0:71:2B:9D:EB:71:6C:89:75:6F:EC:59:92:FB:79:55:9D"]
+  }
+}]

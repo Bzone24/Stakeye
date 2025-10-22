@@ -1,0 +1,42 @@
+body {
+    background: #350b2d;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px){
+    .navbar-collapse {
+        background-color: #350b2d;
+    }
+}
+
+.top-greadient::before {
+    background: radial-gradient(#5a1c50, #350b2d, #350b2d);
+}
+
+.left-greadient::before {
+    background: radial-gradient(#5a1c50, #350b2d, #350b2d);
+}
+
+.right-greadient::before {
+    background: radial-gradient(#5a1c50, #350b2d, #350b2d);
+}
+
+.preloader .loader .spinner-circle {
+    border-color: #350b2d #350b2d #ddd;
+}
+
+.box-inner-shadow{
+    background: #350b2d;
+}
+
+.sticky {
+    background-color: #350b2d;
+}
+
+.how-item-thumb {
+    background: #350b2d;
+}
+
+.footer {
+    background: rgb(53,11,45);
+    background: linear-gradient(180deg, rgba(53,11,45,1) 0%, rgba(85,16,72,1) 71%, rgba(120,17,100,1) 100%);
+}

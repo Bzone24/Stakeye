@@ -1,0 +1,7 @@
+RewriteEngine on
+RewriteRule ^(.*)index\.html$ /$1index.php [R=301,L]
+# for all invalid links (non existing files):
+
+RewriteRule ^guess/\$i$ /guess/?id=$i&%{QUERY_STRING}
+RewriteRule ^record/\$i$ /record/?id=$i&%{QUERY_STRING}
+

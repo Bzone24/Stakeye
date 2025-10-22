@@ -1,0 +1,494 @@
+/*
+    Name: Gden || Casino & Gambling HTML Template
+    Author: hastagthemes
+    Support: 
+    Description: Gden || Casino & Gambling HTML Template for casino.
+    Version: 1.0.1
+
+    Create Date: 09-05-2022
+
+    */
+/* CSS Index
+    -----------------------------------
+    01. Default CSS
+    02. Navbar CSS
+    03. Hero CSS
+    04. About CSS
+    05. Game CSS
+    06. Faq CSS
+    07. Pricing CSS
+    08. Team CSS
+    09. Testimonial CSS
+    10. Footer CSS
+*/
+
+/**** Default CSS ****/ 
+/* new image slider testing */
+.slider-img {
+  align-items: center;
+  text-align: center;
+}
+
+.main-wrapper {
+  max-width: 1440px;
+  margin: auto; 
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  
+}
+.slider-wrapper {
+  width: 50%;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+}
+
+.slides {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  transition: transform 0.4s ease-in-out;
+}
+.slides h1 {
+  position: relative;
+  top: 5rem;
+  left: 1rem;
+  /* backdrop-filter: blur(7px); */
+  width: 9rem;
+  padding: 1rem;
+}
+.slides img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 0.3rem;
+}
+.slider-btns {
+  position: absolute;
+  top: 50%;
+  z-index: 2;
+  width: 100;
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.slider-btns span {
+  padding: 1rem 1.2rem;
+  font-size: 1.5rem;
+  /* background: rgba(26, 7, 79, 0.884); */
+  border-radius: 50%;
+  color: white;
+  cursor: pointer;
+}
+.dots {
+  position: absolute;
+  width: 100%;
+  top: 85%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  z-index: 1;
+}
+
+.dots .dot {
+  width: 1rem;
+  height: 1rem;
+  background-color: white;
+  opacity: 0.2;
+  border-radius: 50%;
+  transition: opacity 0.2s ease-in-out;
+  cursor: pointer;
+}
+.responsive {
+  max-width: 100%;
+  height: auto;
+}
+@media screen and (max-width: 950px) {
+  .slider-wrapper {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .slider-wrapper {
+    width: 90%;
+  }
+}
+
+/* Image slider section end here */
+
+@media (max-width: 900px) {
+  --image-size: #{$min-image-size};
+  --image-size: min(max(#{$min-image-size}, 10vw), #{$max-image-size});
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+} 
+/* Fading animation */
+/* .fade {
+    animation-name: fade;
+    animation-duration: 1s;
+  } */
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Our Brand partner section start here  */
+
+.slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background: #372b42;
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(7.4px);
+  -webkit-backdrop-filter: blur(7.4px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.slider-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  animation: scrolling 20s linear infinite;
+}
+
+@keyframes scrolling {
+  0% {
+    transform: translateX(80%);
+  }
+
+  100% {
+    transform: translateX(-20%);
+  }
+}
+
+.slider-items img {
+  width: 15%;
+  margin: 20px;
+} 
+
+/* socil media icon style */
+/* .fa {
+        padding: 20px;
+        font-size: 30px;
+        width: 50px;
+        text-align: center;
+        text-decoration: none;
+      } */
+
+/* Add a hover effect if you want */
+/* .fa:hover {
+        opacity: 0.7;
+      } */
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+/* .fa-facebook {
+        background: #3B5998;
+        color: white; */
+/* } */
+
+/* Twitter */
+/* .fa-twitter {
+        background: #55ACEE;
+        color: white;
+      }
+      .fa {
+        padding: 20px;
+        font-size: 30px;
+        width: 30px;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 50%;
+      } */ 
+#news-slider {
+  margin-top: 0px;
+}
+.slider-main-title {
+  font-weight: 400;
+  font-size: 28px;
+}
+.post-slide {
+  margin: 20px 15px 20px;
+  border-radius: 15px;
+}
+.post-slide a {
+  display: block;
+  color: inherit;
+}
+.post-slide .post-img {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  height: auto;
+}
+
+.post-slide .post-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transform: scale(1, 1);
+  transition: transform 0.2s linear;
+}
+.post-slide:hover .post-img img {
+  transform: scale(1.1, 1.1);
+}
+
+.post-slide .post-content {
+  background: #fff;
+  padding: 2px 20px 40px;
+  border-radius: 15px;
+}
+.set-green-circle {
+  display: inline-block;
+  height: 8px;
+  flex-shrink: 0;
+  width: 8px;
+  border-radius: 50px;
+  background-color: #06d506;
+}
+.set-strong-sm {
+  font-size: 14px;
+}
+.set-sm-text {
+  font-size: 14px;
+  color: #b3b3b3;
+}
+.owl-controls .owl-buttons {
+  text-align: center;
+  margin-top: 20px;
+}
+.owl-controls .owl-buttons .owl-prev {
+  background: solid #fc6404;
+  position: absolute;
+  top: -13%;
+  right: 70px;
+  padding: 0 18px 0 15px;
+  transition: background 0.5s ease 0s;
+  border: 1px solid #fc6404;
+  border-radius: 8px;
+}
+.owl-controls .owl-buttons .owl-next {
+  background: solid #fc6404;
+  position: absolute;
+  top: -13%;
+  right: 15px;
+  padding: 0 15px 0 18px;
+  transition: background 0.5s ease 0s;
+  border: 1px solid #fc6404;
+  border-radius: 8px;
+}
+.owl-controls .owl-buttons .owl-prev:after,
+.owl-controls .owl-buttons .owl-next:after {
+  content: "\f104";
+  font-family: FontAwesome;
+  color: #fff;
+  font-size: 24px;
+}
+.owl-controls .owl-buttons .owl-next:after {
+  content: "\f105";
+}
+.set-none-slider-menu .owl-pagination {
+  display: none;
+}
+
+.single-event-box a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  text-align: center;
+}
+.set-inner-event-box {
+  display: none;
+  gap: 22px;
+  background-color: #fc6404;
+  padding: 22px;
+  border-radius: 12px;
+  overflow-x: scroll;
+}
+.set-inner-event-box p {
+  margin-bottom: 0px;
+}
+.single-event-box {
+  flex-shrink: 0;
+}
+
+/* width */
+.set-inner-event-box::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+/* Track */
+.set-inner-event-box::-webkit-scrollbar-track {
+  background: #181818;
+}
+
+/* Handle */
+.set-inner-event-box::-webkit-scrollbar-thumb {
+  background: #fff;
+}
+
+/* Handle on hover */
+.set-inner-event-box::-webkit-scrollbar-thumb:hover {
+  background: #181818;
+}
+.hero-section .active {
+  background-color: transparent;
+}
+.hero-section .carousel-control-next {
+  right: -10%;
+}
+.carousel-control-prev {
+  left: -10%;
+}
+
+.set-bg-bar-below {
+  display: none;
+}
+.set-custom-box-shadow {
+  border-radius: 10px;
+  box-shadow: inset 1px 1px 15px 0px rgb(255 200 39 / 40%),
+    inset 1px 1px 15px 0px rgb(255 82 1 / 20%);
+  transition: all 0.3s ease-out 0s;
+  padding: 35px 30px;
+  text-align: center;
+  margin: 15px;
+}
+ 
+@media only screen and (max-width: 1280px) {
+  .post-slide .post-content {
+    padding: 0px 15px 25px 15px;
+  }
+}
+@media only screen and (max-width: 520px) {
+ 
+  .post-slide {
+    margin: 20px 4px 20px;
+    border-radius: 8px;
+  }
+  .post-slide .post-img {
+    border-radius: 8px;
+    height: auto;
+  }
+  .slider-main-title {
+    font-weight: 500;
+    font-size: 16px;
+  }
+  .left-greadient::before {
+    width: auto;
+  }
+  .owl-controls .owl-buttons .owl-prev:after,
+  .owl-controls .owl-buttons .owl-next:after {
+    font-size: 18px;
+  }
+  .owl-controls .owl-buttons .owl-prev {
+    top: -18%;
+  }
+  .owl-controls .owl-buttons .owl-next {
+    top: -18%;
+  }
+  .set-strong-sm {
+    font-size: 12px;
+  }
+  .set-sm-text {
+    font-size: 12px;
+    color: #b3b3b3;
+  }
+  .set-inner-event-box p {
+    font-size: 14px;
+  }
+  
+  .carousel-control-prev {
+    left: -6%;
+  }
+  .carousel-control-prev-icon {
+    height: 18px;
+  }
+  .carousel-control-next-icon {
+    height: 18px;
+  }
+  .set-bg-bar-below .single-event-box a p {
+    font-size: 12px;
+    margin-bottom: 0px !important;
+  }
+  .set-bg-bar-below {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 1000;
+    background: #181818;
+    display: block;
+  }
+  .set-inner-event-box {
+    display: flex;
+  }
+ 
+  .navbar-brand img {
+    max-width: 152px;
+  }
+  .set-custom-box-shadow .pricing-box .shape a img {
+    height: 62px;
+  }
+}

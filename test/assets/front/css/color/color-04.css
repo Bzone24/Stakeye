@@ -1,0 +1,42 @@
+body {
+    background: #13081d;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px){
+    .navbar-collapse {
+        background-color: #13081d;
+    }
+}
+
+.top-greadient::before {
+    background: radial-gradient(#28123d, #13081d, #13081d);
+}
+
+.left-greadient::before {
+    background: radial-gradient(#28123d, #13081d, #13081d);
+}
+
+.right-greadient::before {
+    background: radial-gradient(#28123d, #13081d, #13081d);
+}
+
+.preloader .loader .spinner-circle {
+    border-color: #13081d #13081d #ddd;
+}
+
+.box-inner-shadow{
+    background: #13081d;
+}
+
+.sticky {
+    background-color: #13081d;
+}
+
+.how-item-thumb {
+    background: #13081d;
+}
+
+.footer {
+    background: #13081d;
+    background: linear-gradient(180deg, #13081d, #13081d, #28123d);
+}

@@ -1,0 +1,14 @@
+{
+    "agentCode": "stakeye",
+    "userName": "b9501656069",
+    "tpGameId": 604,
+    "roundId": "tt102",
+    "transactionType": "DR",
+    "transactionId": "dd102",
+    "tableCode": "ssc_ncab",
+    "payoff": 10,
+    "liability": 10,
+    "netpl": 10,
+    "gametype": "live",
+    "methodName": "settlegame"
+}
